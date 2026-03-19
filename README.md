@@ -1,6 +1,6 @@
-# Prismic Migration Kit
+# Prismic Agentic Migration Starter
 
-This kit uses AI-powered agents to help you migrate content from your existing CMS (e.g. WordPress, Contentful, Storyblok) into Prismic. The agents run inside your AI coding tool (Cursor or Claude Code) and walk you through the process step by step.
+This starter uses AI-powered agents to help you migrate content from your existing CMS (e.g. WordPress, Contentful, Storyblok) into Prismic. The agents run inside your AI coding tool (Cursor or Claude Code) and walk you through the process step by step.
 
 ## Prerequisites
 
@@ -10,24 +10,9 @@ This kit uses AI-powered agents to help you migrate content from your existing C
 
 ## Setup
 
-1. Install dependencies:
-
-```sh
-npm install
 ```
+npx @slicemachine/init@latest --starter prismicio-community/agentic-migration-starter
 
-2. Log in to the Prismic CLI:
-
-```sh
-npx prismic login
-```
-
-3. Update `slicemachine.config.json` with your Prismic repository name:
-
-```json
-{
-	"repositoryName": "your-repo-name"
-}
 ```
 
 ## Running the Migration
