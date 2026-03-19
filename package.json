@@ -7,16 +7,19 @@
 		"prismic": "npx prismic",
 		"slicemachine": "start-slicemachine"
 	},
-	"//": "Next.js is installed as a fixture, installing a blank package to ensure proper initialization.",
 	"devDependencies": {
 		"@prismicio/client": "^7.21.6",
 		"@prismicio/migrate": "^0.0.2",
 		"@slicemachine/adapter-next": "latest",
-		"next": "npm:prismic@0.0.1",
+		"next": "latest",
 		"prismic": "npm:@angeloashmore/prismic-cli-poc@canary",
 		"slice-machine-ui": "latest",
 		"tsx": "^4.21.0",
 		"typescript": "^5.9.3",
 		"vitest": "^4.1.0"
+	},
+	"//": "Next.js is installed as a blank package to ensure proper initialization",
+	"resolutions": {
+		"next": "npm:prismic@0.0.1"
 	}
 }
