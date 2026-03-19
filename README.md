@@ -12,7 +12,6 @@ This starter uses AI-powered agents to help you migrate content from your existi
 
 ```
 npx @slicemachine/init@latest --starter prismicio-community/agentic-migration-starter
-
 ```
 
 ## Running the Migration
