@@ -1,5 +1,5 @@
 {
-	"name": "prismic-migration",
+	"name": "agentic-migration-starter",
 	"version": "1.0.0",
 	"private": true,
 	"type": "module",
@@ -18,8 +18,8 @@
 		"typescript": "^5.9.3",
 		"vitest": "^4.1.0"
 	},
-	"//": "Next.js is installed as a blank package to ensure proper initialization",
 	"resolutions": {
 		"next": "npm:prismic@0.0.1"
-	}
+	},
+	"//": "Next.js is installed as a blank package to ensure proper initialization"
 }

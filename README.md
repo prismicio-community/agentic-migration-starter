@@ -34,10 +34,10 @@ Review migrated content at: `https://your-repo-name.prismic.io/builder/migration
 
 ## Project Structure
 
-| Path             | Description                                                              |
-| ---------------- | ------------------------------------------------------------------------ |
-| `./export/`      | Exported content and analysis documents                                  |
+| Path             | Description                                                               |
+| ---------------- | ------------------------------------------------------------------------- |
+| `./export/`      | Exported content and analysis documents                                   |
 | `./scripts/`     | Scripts written by the agents (including converters and migration runner) |
-| `./migration/`   | Migration plan, progress tracker, state file, and per-type reports       |
-| `./customtypes/` | Prismic custom type definitions                                          |
-| `./slices/`      | Prismic slice definitions                                                |
+| `./migration/`   | Migration plan, progress tracker, state file, and per-type reports        |
+| `./customtypes/` | Prismic custom type definitions                                           |
+| `./slices/`      | Prismic slice definitions                                                 |
