@@ -1,0 +1,20 @@
+{
+	"name": "prismic-migration",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"prismic": "npx prismic",
+		"slicemachine": "start-slicemachine"
+	},
+	"devDependencies": {
+		"@prismicio/client": "^7.21.6",
+		"@prismicio/migrate": "^0.0.2",
+		"@slicemachine/adapter-next": "latest",
+		"prismic": "npm:@angeloashmore/prismic-cli-poc@canary",
+		"slice-machine-ui": "latest",
+		"tsx": "^4.21.0",
+		"typescript": "^5.9.3",
+		"vitest": "^4.0.18"
+	}
+}
