@@ -18,7 +18,8 @@ In order to create models, you must use the Prismic CLI: `npx prismic`, use the 
 <guidelines label="Important">
 
 - Read `./export/content-analysis.md` and `./export/website-analysis.md` before designing models.
-- Use an ordered strategy for modeling decisions: (1) local analysis artifacts, (2) `npx prismic --help` and command help, (3) official Prismic docs only for specific blockers.
+- Read the `content-modeling` skill in full before making any modeling decisions. It contains field selection rules, Link field features, slice design, variation strategy, naming conventions, and anti-patterns. Do not skip this step.
+- Use an ordered strategy for modeling decisions: (1) local analysis artifacts, (2) `content-modeling` skill, (3) `npx prismic --help` and command help, (4) official Prismic docs only for specific blockers.
 - If model decisions remain ambiguous after this process, stop and ask the user before generating or changing schemas.
 - All Prismic CLI commands must be run from the root of the current working directory.
 - Do not ever write models yourself, only use the Prismic CLI to generate them.
@@ -31,16 +32,6 @@ In order to create models, you must use the Prismic CLI: `npx prismic`, use the 
 - Generate foundational types first (global settings/navigation), then content types, then shared slices and slice variations.
 - After each generated model, re-check against website/content analysis before proceeding to the next model.
 - If CLI command output conflicts with your intended schema, stop and resolve the mismatch before continuing.
-
-</guidelines>
-
-<guidelines label="Modeling">
-
-- Map source content types to Prismic page types, custom types, or slices as appropriate.
-- Use shared slices for reusable content blocks that appear across multiple page types.
-- Prefer Prismic's native field types when possible (rich text, links, images, etc.).
-- Use slice variations when content blocks have similar structure with minor differences.
-- Consider Prismic's constraints: no circular references, flat slice structure, etc.
 
 </guidelines>
 

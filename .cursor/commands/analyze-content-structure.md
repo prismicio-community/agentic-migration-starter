@@ -54,6 +54,16 @@ In order to analyze content, you should read the base `./export/{cms}/content-ex
 
 </guidelines>
 
+<guidelines label="Reusable block analysis">
+
+- Identify all reusable content blocks, components, or sections (e.g. Contentful components, Storyblok bloks, WordPress Gutenberg blocks, ACF flexible content layouts).
+- For each block, document its field set: field names, types, and whether each field is required or optional.
+- Group blocks that share a common core structure (e.g. similar field names and types) but differ in optional or layout-specific fields. Present these groups explicitly as candidates for slice variations rather than separate slices.
+- For each group, list the shared fields (the common core) and the per-block differences (extra fields, missing fields, or type differences).
+- Blocks with fundamentally different field sets or purposes should not be grouped, even if they share a field name or two coincidentally.
+
+</guidelines>
+
 <guidelines label="Output">
 
 - Use the `project-structure` skill to create the `content-analysis` document.

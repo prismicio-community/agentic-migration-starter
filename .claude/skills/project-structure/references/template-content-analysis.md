@@ -21,6 +21,13 @@ For each content type:
 - Asset metadata available
 - Image transformation support
 
+## Reusable block analysis
+For each group of structurally similar blocks:
+- Group name and member blocks
+- Shared core fields (name, type)
+- Per-block differences (extra/missing/different fields)
+- Recommendation: variation candidates vs. separate slices
+
 ## Unusual patterns
 - Polymorphic fields
 - Deeply nested structures
