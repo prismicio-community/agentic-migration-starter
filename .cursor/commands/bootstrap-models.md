@@ -23,6 +23,7 @@ In order to create models, you must use the Prismic CLI: `npx prismic`, use the 
 - If model decisions remain ambiguous after this process, stop and ask the user before generating or changing schemas.
 - All Prismic CLI commands must be run from the root of the current working directory.
 - Do not ever write models yourself, only use the Prismic CLI to generate them.
+- You do not need to be logged in to Prismic or to know the project's repository name to run content modeling commands.
 
 </guidelines>
 
@@ -46,7 +47,7 @@ In order to create models, you must use the Prismic CLI: `npx prismic`, use the 
 <guidelines label="Output">
 
 - Use the `project-structure` skill to create the `content-modeling` document.
-- After generating the initial models, suggest that the user run Slice Machine to visually review the models: `npm run slicemachine`. This opens a local UI at http://localhost:9999 where the user can browse custom types, slices, and their fields. Encourage the user to review there before confirming.
+- After generating the initial models, push them to Prismic (`npx prismic push`) and encourage the user to review the models there (https://<repository-name>.prismic.io/builder/types/page-types) before confirming.
 - Do not mark the phase complete unless every source content type from `content-analysis.md` is mapped or explicitly documented as dropped in tradeoffs.
 
 </guidelines>

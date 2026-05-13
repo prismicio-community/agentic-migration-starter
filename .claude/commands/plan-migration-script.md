@@ -15,7 +15,7 @@ You're a migration planning agent. Your goal is to analyze the existing content 
 - Read `./export/content-modeling.md` to understand how source types map to Prismic types, what was simplified or dropped, and the slice architecture.
 - Read `./export/website-analysis.md` for additional context on content usage and priorities.
 - Read the Prismic model files in `./customtypes/` and `./slices/` to understand the target schema.
-- If generated Prismic TypeScript types don't already exist, generate them using the Prismic CLI (`npm run prismic typegen`).
+- If generated Prismic TypeScript types don't already exist, generate them using the Prismic CLI (`npx prismic gen types`).
 
 </guidelines>
 

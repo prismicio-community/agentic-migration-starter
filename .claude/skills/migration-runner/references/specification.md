@@ -92,6 +92,7 @@ The state file must track:
 - **Completed types**: which types have been fully migrated.
 - **Failed documents**: for each document that failed, stores the source file path, the error message, and the status `"failed"`.
 - **Deferred updates**: a queue of relationships that couldn't be resolved because the target type hasn't been migrated yet.
+- **Assets**: a map of asset URL or path to Prismic asset ID. This can be updated after the `WriteClient.migrate()`'s `reporter` reported `{ type: "assets:created" }` by reading the updated `migration._assets` map. This map is crucial to prevent duplicated asset uploads when a run fails and allows to recover swiftly after a failure. When a document converters has to create an asset, it should first try to look if it already exists in this map (i.e. already exists in Prismic) before creating a new asset.
 
 ## Localization
 

@@ -37,8 +37,8 @@ The migration runner is the execution backbone for type converters. It is respon
 
 <guidelines label="Repository and credentials">
 
-- Check `./slicemachine.config.json` for the Prismic repository name. If the file exists and `repositoryName` is not `"your-repo-name"`, use it. Otherwise, ask the user.
-- Check if a `.env` file contains a Prismic write token. If missing, ask the user for a write token.
+- Check `./prismic.config.json` for the Prismic repository name. If the file exists and `repositoryName` is defined, use it. Otherwise, ask the user to run `npx prismic init` first.
+- Check if a `.env` file contains a Prismic write token. If missing, create one using `npx prismic token create --write`
 
 </guidelines>
 

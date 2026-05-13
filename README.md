@@ -13,7 +13,9 @@ This starter uses AI-powered agents to help you migrate content from your existi
 ## Setup
 
 ```
-npx @slicemachine/init@latest --starter agentic-migration-starter
+npx degit https://github.com/prismicio-community/agentic-migration-starter my-project
+cd my-project
+npx prismic init
 ```
 
 ## Running the Migration
@@ -26,7 +28,7 @@ Exports all content from your source CMS and analyzes both the content structure
 
 ### 2. `/bootstrap-models`
 
-Reads the analysis outputs and uses the Prismic CLI to create custom types and slices for your Prismic repository. You can iterate on the models until you're satisfied, then push them from Slice Machine (`npm run slicemachine`).
+Reads the analysis outputs and uses the Prismic CLI to create custom types and slices for your Prismic repository. You can iterate on the models until you're satisfied and preview them online on your repositorie's type builder.
 
 ### 3. `/script-migration`
 
