@@ -1,9 +1,7 @@
 # Prismic Agentic Migration Starter
 
 > [!WARNING]
-> This repository is archived and no longer maintained. To migrate to Prismic with AI, follow the [Prismic migration guide](https://prismic.io/docs/migration), which uses the `migrate-to-prismic` skill from [prismicio/skills](https://github.com/prismicio/skills).
-
-> **Full documentation:** [prismic.io/docs/migration#agentic-migration](https://prismic.io/docs/migration#agentic-migration)
+> This repository is archived and no longer maintained. To migrate to Prismic with AI, follow the [Prismic migration guide](https://prismic.io/docs/migration).
 
 This starter uses AI-powered agents to help you migrate content from your existing CMS (e.g. WordPress, Contentful, Storyblok) into Prismic. The agents run inside your AI coding tool (Cursor or Claude Code) and walk you through the process step by step.
 
